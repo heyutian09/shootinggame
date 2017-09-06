@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript " src="js/jCanvaScript.1.5.18.min.js"></script>
+    <script type="text/javascript " src="js/CONFIG.js"></script>
+    <script type="text/javascript " src="js/baselevel.js"></script>
+    <title>射击游戏</title>
+</head>
+<body>
+<div id="game">
+    <div class="game-panel">
+            <section id="game-intro" class="game-ui">
+                <h1 class="section-title">射击游戏</h1>
+                <p class="game-desc">这是一个令人欲罢不能的射击游戏，使用 ← 和 → 操作你的飞机，使用空格（space）进行射击。一起来消灭宇宙怪兽吧！</p>
+                <p class="game-level">当前Level: 1</p>
+                <button id="js-play" class="button" onclick="gamestart();" >开始游戏</button>
+            </section>
+        <section id="game-failed" class="game-ui">
+            <h1 class="section-title">抱歉，<br>您并未躲过所有怪兽的袭击!<br>游戏结束</h1>
+            <p class="game-info-text">最终得分: <span id="score"></span></p>
+            <button id="js-replay" class="button">重新开始</button>
+        </section>
+        <section id="game-success" class="game-ui">
+            <h1 class="section-title">恭喜您,<br>躲过了所有怪兽的袭击!<br>游戏成功</h1>
+            <button id="js-next" class="button">继续游戏</button>
+        </section>
+        <section id="game-all-success" class="game-ui">
+            <h1 class="section-title">通关成功</h1>
+            <p class="game-info-text">你已经成功地防御了怪兽的所有攻击。</p>
+            <button id="js-playagain" class="button">再玩一次</button>
+        </section>
+    </div>
+    <div id="game-info">
+        <span class="title">分数:</span>
+        <span id="playerscore"></span>
+    </div>
+    <canvas id="c1" width="700" height="600">flase</canvas>
+</div>
+</body>
+</html>
+
+
+
+
+
